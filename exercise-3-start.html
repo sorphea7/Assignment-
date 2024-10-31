@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header, .footer {
+            background-color: #4d79ff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            margin: 1rem 0;
+        }
+        .main {
+            background-color: #4CAF50;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            flex: 3;
+        }
+        .item {
+            background-color: #2e7d32;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .sidebar {
+            background-color: #f44336;
+            color: white;
+            padding: 1rem;
+            flex: 1;
+            margin-left: 1rem;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">header</div>
+
+<div class="container">
+    <div class="main">
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+        <div class="item">item</div>
+    </div>
+    <div class="sidebar">sidebar</div>
+</div>
+
+<div class="footer">footer</div>
+
+</body>
+</html>
